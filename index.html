@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <title>An RL Library for Research and Education &mdash; rlberry v0.6.0.post25.dev0+7b18221  documentation</title>
+  
+  <link rel="canonical" href="https://rlberry-py.github.io/rlberry/index.html" />
+
+  
+
+  <link rel="stylesheet" href="_static/css/vendor/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sg_gallery.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sg_gallery-binder.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sg_gallery-dataframe.css" type="text/css" />
+  <link rel="stylesheet" href="_static/sg_gallery-rendered-html.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+<script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script> 
+</head>
+<body>
+
+
+<nav id="navbar" class="sk-landing-navbar navbar navbar-expand-md navbar-light bg-light py-0">
+  <div class="container-fluid sk-landing-container px-0">
+    <button
+      id="sk-navbar-toggler"
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="sk-navbar-collapse collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="installation.html">Install</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="user_guide.html">User Guide</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="auto_examples/index.html">Examples</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="api.html">API</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="changelog.html">Changelog</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="sk-nav-link nav-link" href="https://github.com/rlberry-py/rlberry">github</a>
+        </li>
+        <!--
+        <li class="nav-item dropdown nav-more-item-dropdown">
+          <a class="sk-nav-link nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          </div>
+        </li>-->
+    </ul>
+      <div id="searchbox" role="search">
+          <div class="searchformwrapper">
+            <form action="https://duckduckgo.com/">
+            <input type="hidden" id="sites" name="sites" value="https://rlberry-py.github.io/rlberry/">
+            <input type="search" placeholder="Search &hellip;" value="" name="q" />
+            <input class="sk-search-text-btn" type="submit" value="Go" /></form>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="d-flex" id="sk-doc-wrapper">
+    <input type="checkbox" name="sk-toggle-checkbox" id="sk-toggle-checkbox">
+    <label id="sk-sidemenu-toggle" class="sk-btn-toggle-toc btn sk-btn-primary" for="sk-toggle-checkbox">Toggle Menu</label>
+    <div id="sk-sidebar-wrapper" class="border-right">
+      <div class="sk-sidebar-toc-wrapper">
+        <div class="sk-sidebar-toc-logo">
+        </div>
+	<br>
+        <div class="alert alert-warning p-1 mb-2" role="alert">
+
+          <p class="text-center mb-0">
+          rlberry v0.6.0.post25.dev0+7b18221 <br/>
+          <a href="versions.html">Other versions</a>
+          </p>
+
+        </div>
+            <div class="sk-sidebar-toc">
+              <ul>
+<li><a class="reference internal" href="#">An RL Library for Research and Education</a></li>
+<li><a class="reference internal" href="#seeding-reproducibility">Seeding &amp; Reproducibility</a></li>
+<li><a class="reference internal" href="#contributing-to-rlberry">Contributing to rlberry</a></li>
+<li><a class="reference internal" href="#documentation-contents">Documentation Contents</a><ul>
+</ul>
+</li>
+</ul>
+
+            </div>
+      </div>
+    </div>
+    <div id="sk-page-content-wrapper">
+      <div class="sk-page-content container-fluid body px-md-3" role="main">
+        
+  <a class="reference internal image-reference" href="_images/logo_wide.svg"><img alt="rlberry logo" class="align-center" src="_images/logo_wide.svg" width="50%" /></a>
+<p>../</p>
+<section id="an-rl-library-for-research-and-education">
+<span id="index"></span><h1>An RL Library for Research and Education<a class="headerlink" href="#an-rl-library-for-research-and-education" title="Permalink to this heading">¶</a></h1>
+<p><strong>Writing reinforcement learning algorithms is fun!</strong> <em>But after the fun, we have
+lots of boring things to implement</em>: run our agents in parallel, average and plot results,
+optimize hyperparameters, compare to baselines, create tricky environments etc etc!</p>
+<p><a class="reference external" href="https://github.com/rlberry-py/rlberry">rlberry</a> <strong>is here to make your life easier</strong> by doing all these things with a few lines of code,
+so that you can spend most of your time developing agents. <strong>Check our</strong> <a class="reference internal" href="basics/quick_start_rl/quickstart.html#quick-start"><span class="std std-ref">the quickstart</span></a></p>
+<p>In addition, <a class="reference external" href="https://github.com/rlberry-py/rlberry">rlberry</a>:</p>
+<ul class="simple">
+<li><p>Provides <strong>implementations of several RL agents</strong> for you to use as a starting point or as baselines;</p></li>
+<li><p>Provides a set of <strong>benchmark environments</strong>, very useful to debug and challenge your algorithms;</p></li>
+<li><p>Handles all random seeds for you, ensuring <strong>reproducibility</strong> of your results;</p></li>
+<li><p>Is <strong>fully compatible with</strong> several commonly used RL libraries like <a class="reference external" href="https://gymnasium.farama.org/">Gymnasium</a> and <a class="reference external" href="https://stable-baselines.readthedocs.io/en/master/">Stable Baselines</a>.</p></li>
+</ul>
+</section>
+<section id="seeding-reproducibility">
+<h1>Seeding &amp; Reproducibility<a class="headerlink" href="#seeding-reproducibility" title="Permalink to this heading">¶</a></h1>
+<p><a class="reference external" href="https://github.com/rlberry-py/rlberry">rlberry</a> has a class <a class="reference internal" href="generated/rlberry.seeding.seeder.Seeder.html#rlberry.seeding.seeder.Seeder" title="rlberry.seeding.seeder.Seeder"><code class="xref py py-class docutils literal notranslate"><span class="pre">Seeder</span></code></a> that conveniently wraps a <a class="reference external" href="https://numpy.org/doc/stable/reference/random/parallel.html">NumPy SeedSequence</a>,
+and allows us to create independent random number generators for different objects and threads, using a single
+<a class="reference internal" href="generated/rlberry.seeding.seeder.Seeder.html#rlberry.seeding.seeder.Seeder" title="rlberry.seeding.seeder.Seeder"><code class="xref py py-class docutils literal notranslate"><span class="pre">Seeder</span></code></a> instance. See <a class="reference internal" href="basics/seeding.html#seeding"><span class="std std-ref">Seeding</span></a>.</p>
+</section>
+<section id="contributing-to-rlberry">
+<h1>Contributing to rlberry<a class="headerlink" href="#contributing-to-rlberry" title="Permalink to this heading">¶</a></h1>
+<p>If you want to contribute to rlberry, check out <a class="reference internal" href="contributing.html#contributing"><span class="std std-ref">the contribution guidelines</span></a>.</p>
+</section>
+<section id="documentation-contents">
+<h1>Documentation Contents<a class="headerlink" href="#documentation-contents" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#os-dependency">OS dependency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#latest-version-0-5-0">Latest version (0.5.0)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#development-version">Development version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#previous-versions">Previous versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#deep-rl-agents">Deep RL agents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide.html">User guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#tutorials">Tutorials</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#quick-start-setup-an-experiment-and-evaluate-different-agents">Quick start: setup an experiment and evaluate different agents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide.html#agents-hyperparameter-optimization-and-experiment-setup">Agents, hyperparameter optimization and experiment setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#compatibility-with-external-libraries">Compatibility with External Libraries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide.html#how-to-contribute">How to contribute?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="external.html">External Libraries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="other/using_stable_baselines.html">Using rlberry and Stable Baselines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="other/using_gym.html">Using rlberry and Gymnasium</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">rlberry API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#manager">Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#agents">Agents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#environments">Environments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#seeding">Seeding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#utilities-logging-typing">Utilities, Logging &amp; Typing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#environment-wrappers">Environment Wrappers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#dev-version">Dev version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-6-0">Version 0.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-5-0">Version 0.5.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-4-1">Version 0.4.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-4-0">Version 0.4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-3-0">Version 0.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-2-1">Version 0.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#version-0-2">Version 0.2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+      </div>
+    <div class="container">
+      <footer class="sk-content-footer">
+      </footer>
+    </div>
+  </div>
+</div>
+<script src="_static/js/vendor/bootstrap.min.js"></script>
+
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-22606712-2', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('send', 'pageview');
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script>
+$(document).ready(function() {
+    /* Add a [>>>] button on the top-right corner of code samples to hide
+     * the >>> and ... prompts and the output and thus make the code
+     * copyable. */
+    var div = $('.highlight-python .highlight,' +
+                '.highlight-python3 .highlight,' +
+                '.highlight-pycon .highlight,' +
+		'.highlight-default .highlight')
+    var pre = div.find('pre');
+
+    // get the styles from the current theme
+    pre.parent().parent().css('position', 'relative');
+    var hide_text = 'Hide prompts and outputs';
+    var show_text = 'Show prompts and outputs';
+
+    // create and add the button to all the code blocks that contain >>>
+    div.each(function(index) {
+        var jthis = $(this);
+        if (jthis.find('.gp').length > 0) {
+            var button = $('<span class="copybutton">&gt;&gt;&gt;</span>');
+            button.attr('title', hide_text);
+            button.data('hidden', 'false');
+            jthis.prepend(button);
+        }
+        // tracebacks (.gt) contain bare text elements that need to be
+        // wrapped in a span to work with .nextUntil() (see later)
+        jthis.find('pre:has(.gt)').contents().filter(function() {
+            return ((this.nodeType == 3) && (this.data.trim().length > 0));
+        }).wrap('<span>');
+    });
+
+    // define the behavior of the button when it's clicked
+    $('.copybutton').click(function(e){
+        e.preventDefault();
+        var button = $(this);
+        if (button.data('hidden') === 'false') {
+            // hide the code output
+            button.parent().find('.go, .gp, .gt').hide();
+            button.next('pre').find('.gt').nextUntil('.gp, .go').css('visibility', 'hidden');
+            button.css('text-decoration', 'line-through');
+            button.attr('title', show_text);
+            button.data('hidden', 'true');
+        } else {
+            // show the code output
+            button.parent().find('.go, .gp, .gt').show();
+            button.next('pre').find('.gt').nextUntil('.gp, .go').css('visibility', 'visible');
+            button.css('text-decoration', 'none');
+            button.attr('title', hide_text);
+            button.data('hidden', 'false');
+        }
+    });
+
+	/*** Add permalink buttons next to glossary terms ***/
+	$('dl.glossary > dt[id]').append(function() {
+		return ('<a class="headerlink" href="#' +
+			    this.getAttribute('id') +
+			    '" title="Permalink to this term">¶</a>');
+	});
+});
+
+</script>
+</body>
+</html>

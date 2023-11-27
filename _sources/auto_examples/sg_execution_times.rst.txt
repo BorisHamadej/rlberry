@@ -1,0 +1,21 @@
+
+:orphan:
+
+.. _sphx_glr_auto_examples_sg_execution_times:
+
+
+Computation times
+=================
+**00:14.576** total execution time for **auto_examples** files:
+
++-----------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_auto_examples_plot_kernels.py` (``plot_kernels.py``)               | 00:09.412 | 0.0 MB |
++-----------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_auto_examples_plot_writer_wrapper.py` (``plot_writer_wrapper.py``) | 00:02.145 | 0.0 MB |
++-----------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_auto_examples_plot_checkpointing.py` (``plot_checkpointing.py``)   | 00:01.856 | 0.0 MB |
++-----------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_auto_examples_plot_agent_manager.py` (``plot_agent_manager.py``)   | 00:01.164 | 0.0 MB |
++-----------------------------------------------------------------------------------+-----------+--------+
+| :ref:`sphx_glr_auto_examples_comparison_agents.py` (``comparison_agents.py``)     | 00:00.000 | 0.0 MB |
++-----------------------------------------------------------------------------------+-----------+--------+

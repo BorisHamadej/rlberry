@@ -1,0 +1,12 @@
+﻿:mod:`rlberry.wrappers.vis2d`.Vis2dWrapper
+=================================================
+
+.. currentmodule:: rlberry.wrappers.vis2d
+
+.. autoclass:: Vis2dWrapper
+
+.. include:: rlberry.wrappers.vis2d.Vis2dWrapper.examples
+
+.. raw:: html
+
+    <div class="clearer"></div>
